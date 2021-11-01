@@ -1,0 +1,41 @@
+package praktikum;
+
+import java.util.Scanner;
+
+public class Flowchart {
+	public static void main (String args[]){
+		int Nama;
+		System.out.println("Absensi mahasiswa");
+		System.out.println("Menyebut nama mahasiswa");
+		String Nama1;
+		Scanner scan1 = new Scanner(System.in);
+		System.out.print("Bersuara?");
+		Nama1 = scan1.nextLine();
+		if (!Nama1.trim().equals("Yes")){
+			System.out.println("Alpa");
+			Scanner scan2 = new Scanner(System.in);
+			System.out.println("nama mahasiswa terakhir?");{
+				Nama1 = scan2.nextLine();
+				if (!Nama1.trim().equals("Yes")){
+				System.out.println("Lanjut");
+				}
+				else if (!Nama1.trim().equals("No")){
+				System.out.println("End");
+				}
+			}
+		}
+		else if (!Nama1.trim().equals("No")){
+			System.out.println("Hadir");
+			Scanner scan2 = new Scanner(System.in);
+			System.out.println("nama mahasiswa terakhir?");{
+				Nama1 = scan2.nextLine();
+				if (!Nama1.trim().equals("Yes")){
+				System.out.println("Lanjut");
+				}
+				else if (!Nama1.trim().equals("No")){
+				System.out.println("End");
+				}
+			}
+		}
+	}
+}
